@@ -63,7 +63,7 @@ class LinksController < ApplicationController
   end
 
   def upvote
-    @link = Link.find(parms[:id])
+    @link = Link.find(params[:id])
     @link.upvote_by current_user
     redirect_to :back
   end
