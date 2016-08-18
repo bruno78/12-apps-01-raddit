@@ -20,3 +20,4 @@ end
 
 gem 'devise', '~> 3.4.0'
 gem 'bootstrap-sass'
+gem 'acts_as_votable', '~> 0.10.0'
