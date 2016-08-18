@@ -5,14 +5,14 @@ This app was created under the tutorial 12 web apps in 12 weeks by Mackenzie Chi
 
 ### Project Planning
 
-* There will be a homepage which will be a list of links -[x]
-* There will be a page for users sign in and sign up  -[x]
-* There will be an area to add links -[x]
-* Users will be able tod edit and delete own links -[x]
-* Users will be able to vote up and down on each link -[x]
-* Users will be able to comment on links -[x]
-* Users will be able to edit own links (not included on tutorial) -[x]
-* Users will be able to delete own links -[x]
+* There will be a homepage which will be a list of links
+* There will be a page for users sign in and sign up
+* There will be an area to add links
+* Users will be able tod edit and delete own links
+* Users will be able to vote up and down on each link
+* Users will be able to comment on links
+* Users will be able to edit own links (not included on tutorial)
+* Users will be able to delete own links
 
 
 #### The tutorial video
@@ -30,7 +30,7 @@ This app was created under the tutorial 12 web apps in 12 weeks by Mackenzie Chi
 5. rake db:migrate // to create the schema
 6. rails s
 7. http://localhost:3000/links
-7.1. http://localhost:3000/links/new // where you can create a link
+  * http://localhost:3000/links/new // where you can create a link
 
 8. Since everything is working fine and there's nothing more to do with Posting the link and title feature. We can go back to master, merge and commit
 
@@ -58,9 +58,11 @@ This app was created under the tutorial 12 web apps in 12 weeks by Mackenzie Chi
   1. Ensure you have defined default url options in your environments files. Here
      is an example of default_url_options appropriate for a development environment
      in config/environments/development.rb:
-'''ruby
+
+''' ruby
        config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 '''
+
      In production, :host should be set to the actual host of your application.
 
   2. Ensure you have defined root_url to *something* in your config/routes.rb.
@@ -69,14 +71,17 @@ This app was created under the tutorial 12 web apps in 12 weeks by Mackenzie Chi
 
   3. Ensure you have flash messages in app/views/layouts/application.html.erb.
      For example:
-'''html
+
+''' html
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
 '''
+
   4. If you are deploying on Heroku with Rails 3.2 only, you may want to set:
 
+''' ruby
        config.assets.initialize_on_precompile = false
-
+'''
      On config/application.rb forcing your application to not access the DB
      or load models when precompiling your assets.
 
